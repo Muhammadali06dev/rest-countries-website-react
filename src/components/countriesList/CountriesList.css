@@ -1,0 +1,42 @@
+.cards {
+   padding-bottom: 4.5rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   gap: 7.5rem;
+}
+
+.cards__item {
+   border-radius: 5px;
+   overflow: hidden;
+   background-color: var(--white-bg-color);
+   box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+   transition: all 0.3s ease;
+}
+
+.cards__item-inner {
+   padding: 2.4rem 1rem 4.5rem 2.4rem;
+}
+
+.cards__item img {
+   width: 100%;
+   height: auto;
+   height: 170px;
+   object-fit: cover;
+}
+
+.cards__title {
+   margin-bottom: 1.6rem;
+   font-weight: 800;
+}
+
+.cards__item p:not(:last-child) {
+   margin-bottom: 0.8rem;
+}
+
+.cards__item p {
+   font-weight: 600;
+}
+
+.cards__item span {
+   font-weight: 300;
+}
